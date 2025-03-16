@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laziness Calculator (Beta)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🦥 Laziness Calculator <span class="beta-tag">BETA</span></h1>
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="question-container">
+                <h2 id="question-text">Loading...</h2>
+                <div class="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn" class="hidden">Previous</button>
+                <button id="next-btn">Next</button>
+                <button id="submit-btn" class="hidden">Calculate Score</button>
+            </div>
+        </div>
+        <div class="result-container hidden">
+            <h2>Your Laziness Score</h2>
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="score-value">0</span>
+                    <span class="score-label">/100</span>
+                </div>
+            </div>
+            <div class="score-description">
+                <h3 id="score-title">Loading...</h3>
+                <p id="score-description">Loading...</p>
+            </div>
+            <button id="restart-btn">Take Test Again</button>
+            <div class="share-section">
+                <p>Share your score:</p>
+                <button id="share-btn">📱 Share Result</button>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <p>Note: This is a fun calculator and should not be taken too seriously! 😊</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
